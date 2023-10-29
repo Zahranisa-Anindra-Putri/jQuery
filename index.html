@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            jQuery
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#buttonPertama").click(function(){
+                    alert("Berhasil diklik")
+                })
+                $(".buttonKedua").click(function(){
+                    alert("Berhasil klik button kedua")
+                })
+                $("#inputPertama").change(function(){
+                    console.log("Berhasil memasukkan input")
+                    console.log($("#inputPertama").val())
+                    $(".inputKedua").val($("#inputPertama").val())
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Laman jQuery</h1>
+        <button id="buttonPertama">
+            Click Me
+        </button>
+        <button class="buttonKedua">
+            Click Me 2
+        </button>
+        <form>
+            <label>Input Pertama</label>
+            <input id="inputPertama"/>
+            <br/>
+            <label>Input Kedua</label>
+            <input class="inputKedua"/>
+            <br/>
+        </form>
+    </body>
+</html>
