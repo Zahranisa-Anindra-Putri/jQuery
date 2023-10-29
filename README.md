@@ -1,1 +1,1 @@
-# jQuery-dan-LeafletJS
+# jQuery
